@@ -1,4 +1,5 @@
 import React from "react"
+import Logo from "../images/logo.svg"
 
 export const Navigation = ({ onBurgerMenuClick, status }) => {
   const openMenu = () => {
@@ -11,11 +12,7 @@ export const Navigation = ({ onBurgerMenuClick, status }) => {
         <div className="flex items-center flex-grow flex-shrink-0 lg:flex-grow-0">
           <div className="flex items-center justify-between w-full md:w-auto">
             <a href="#">
-              <img
-                className="h-8 w-auto sm:h-10"
-                src="/img/logos/workflow-mark-on-white.svg"
-                alt=""
-              />
+              <img className="h-8 w-auto sm:h-10" src={Logo} alt="" />
             </a>
             <div
               className="-mr-2 flex items-center md:hidden"
