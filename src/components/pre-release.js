@@ -10,7 +10,9 @@ export const PreRelease = () => {
               #1: Release WebApps with Confidence
             </h2>
             <p className="mt-3 max-w-3xl text-lg leading-6 text-indigo-200">
-              Sign up before June 12 to get the pre-release for free.
+              Sign up before{" "}
+              <span className="font-extrabold text-white">June 12</span> to get
+              the pre-release for free.
             </p>
           </div>
           <div className="mt-8 sm:w-full sm:max-w-md xl:mt-0 xl:ml-8">
@@ -29,7 +31,7 @@ export const PreRelease = () => {
               </div>
             </form>
             <p className="mt-3 text-sm leading-5 text-indigo-200">
-              We care about the protection of your data. Read our
+              <span>We care about the protection of your data. Read our </span>
               <a href="#" className="text-white font-medium underline">
                 Privacy Policy.
               </a>

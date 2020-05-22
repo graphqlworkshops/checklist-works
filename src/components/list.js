@@ -15,22 +15,31 @@ const inventory = [
     title: "Engineering Manager first 30 days",
     status: STATUS.DRAFT,
     eta: "June, 2020",
+    author: "Santiago Esteva",
+    img:
+      "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
   },
   {
     id: "3",
     title: "Reusable Components Readiness",
     status: STATUS.IDEA,
     eta: "June, 2020",
+    author: "Santiago Esteva",
+    img:
+      "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
   },
   {
     id: "4",
     title: "Deploy your website in one day",
     status: STATUS.IDEA,
     eta: "July, 2020",
+    author: "Santiago Esteva",
+    img:
+      "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
   },
 ]
 
-const ListItem = ({ id, title, status, eta }) => {
+const ListItem = ({ id, title, status, eta, img, author }) => {
   return (
     <li className="block hover:bg-gray-50 focus:outline-none focus:bg-gray-50 transition duration-150 ease-in-out">
       <a
@@ -41,11 +50,7 @@ const ListItem = ({ id, title, status, eta }) => {
         <div className="flex items-center px-4 py-4 sm:px-6">
           <div className="min-w-0 flex-1 flex items-center">
             <div className="flex-shrink-0">
-              <img
-                className="h-12 w-12 rounded-full"
-                src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                alt=""
-              />
+              <img className="h-12 w-12 rounded-full" src={img} alt="" />
             </div>
             <div className="min-w-0 flex-1 px-4 md:grid md:grid-cols-2 md:gap-4">
               <div>
@@ -53,14 +58,16 @@ const ListItem = ({ id, title, status, eta }) => {
                   #{id} - {title}
                 </div>
                 <div className="mt-2 flex items-center text-sm leading-5 text-gray-500 hidden md:block">
-                  <span>author: </span>
-                  <span className="truncate">Santiago Esteva</span>
+                  <span>by </span>
+                  <span className="truncate font-medium text-gray-600">
+                    {author}
+                  </span>
                 </div>
               </div>
               <div className="hidden md:block">
                 <div>
                   <div className="text-sm leading-5 text-gray-900">
-                    ETA
+                    <span>ETA: </span>
                     <time dateTime="2020-01-07">{eta}</time>
                   </div>
                   <div className="mt-2 flex items-center text-sm leading-5 text-gray-500">
