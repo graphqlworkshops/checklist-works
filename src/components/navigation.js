@@ -2,10 +2,6 @@ import React from "react"
 import Logo from "../images/logo.svg"
 
 export const Navigation = ({ onBurgerMenuClick, status }) => {
-  const openMenu = () => {
-    console.log("open sesame")
-    onBurgerMenuClick()
-  }
   return (
     <div className="relative pt-6 px-4 sm:px-6 lg:px-8">
       <nav className="relative flex items-center justify-between sm:h-10 lg:justify-start">
@@ -21,7 +17,7 @@ export const Navigation = ({ onBurgerMenuClick, status }) => {
               <button
                 type="button"
                 className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out z-10"
-                onClick={openMenu}
+                onClick={onBurgerMenuClick}
               >
                 <svg
                   className="h-6 w-6"
