@@ -106,7 +106,7 @@ const ListItem = ({ id, title, status, eta, img, author }) => {
 
 export const List = () => {
   return (
-    <div className="bg-white shadow overflow-hidden sm:rounded-md px-10">
+    <div className="bg-white shadow overflow-hidden sm:rounded-md px-10 my-10">
       <ul>
         {inventory.map(checklist => {
           return <ListItem {...checklist} key={checklist.id} />
