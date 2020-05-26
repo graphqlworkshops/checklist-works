@@ -10,10 +10,10 @@ export const Hero = () => {
           <span className="text-indigo-600">in complexity</span>
         </h2>
         <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
-          Checklists prevents failure, human error.
+          Checklists prevent failure, and human error.
           <br className="2xl:hidden" />
           NASA, the aviation industry, surgeons and many more praise this simple
-          method to save time, money and lives.
+          method to save time, money, and lives.
         </p>
       </div>
     </div>

@@ -1,6 +1,7 @@
 import React from "react"
 
 export const Testimonials = () => {
+  return <div />
   return (
     <section className="bg-white overflow-hidden py-20 px-10 my-10">
       <div className="relative max-w-screen-xl mx-auto pt-20 pb-12 px-4 sm:px-6 lg:px-8 lg:py-20">

@@ -1,5 +1,7 @@
 import React from "react"
 import releaseImg from "../images/1.png"
+import { OutboundLink } from "gatsby-plugin-google-analytics"
+
 export const PreRelease = () => {
   return (
     <div className="relative bg-gray-800">
@@ -13,10 +15,10 @@ export const PreRelease = () => {
       <div className="relative max-w-screen-xl mx-auto px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
         <div className="md:ml-auto md:w-1/2 md:pl-10">
           <div className="text-base leading-6 font-semibold uppercase tracking-wider text-gray-300">
-            Pre-Release #1
+            Checklist #1
           </div>
           <h2 className="mt-2 text-white text-3xl leading-9 font-extrabold tracking-tight sm:text-4xl sm:leading-10">
-            Release WebApps with Confidence
+            Pre-Order: Release WebApps with Confidence
           </h2>
           <p className="mt-3 text-lg leading-7 text-gray-300">
             In this live digital resource, you can find years of experience
@@ -25,11 +27,12 @@ export const PreRelease = () => {
           </p>
           <div className="mt-8">
             <div className="inline-flex rounded-md shadow">
-              <a
+              <OutboundLink
+                name="pre-release"
                 href="https://gum.co/release-webapps-with-confidence"
                 className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-gray-900 bg-white hover:text-gray-600 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out"
               >
-                Get it now! FREE
+                Get it now!
                 <svg
                   className="-mr-1 ml-3 h-5 w-5 text-gray-400"
                   fill="currentColor"
@@ -41,7 +44,7 @@ export const PreRelease = () => {
                     clipRule="evenodd"
                   />
                 </svg>
-              </a>
+              </OutboundLink>
             </div>
           </div>
         </div>
