@@ -1,5 +1,5 @@
 import React from "react"
-
+import { Follow } from "./follow"
 export const Hero = () => {
   return (
     <div className="mt-10 mx-auto max-w-screen-xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
@@ -15,6 +15,9 @@ export const Hero = () => {
           NASA, the aviation industry, surgeons and many more praise this simple
           method to save time, money, and lives.
         </p>
+        <div className="mt-5 sm:max-w-lg sm:mx-auto sm:text-center lg:text-left lg:mx-0">
+          <Follow />
+        </div>
       </div>
     </div>
   )
